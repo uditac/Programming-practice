@@ -1,0 +1,27 @@
+Given an array, , of  integers, print 's elements in reverse order as a single line of space-separated numbers.
+
+
+class Solution {
+
+
+
+    static void Main(string[] args) {
+        
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp))
+        ;
+         
+         
+        int [] temp = arr;
+        Array.Reverse(temp);
+
+        foreach(var i in temp)
+        {
+            Console.Write(i.ToString() + ' ');
+        }
+
+    }
+
+   
+}
